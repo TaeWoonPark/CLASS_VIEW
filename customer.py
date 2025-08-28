@@ -7,12 +7,6 @@ class Customer:
     def full_name(self):
         return f"{self.first_name} {self.family_name}"
 
-    def is_adult(self):
-        return self.age >= 20
-
-    def __str__(self):
-        return f"{self.full_name()} ({self.age}歳)"
-
     def entry_fee(self):
         if self.age < 20:
             return 1000
